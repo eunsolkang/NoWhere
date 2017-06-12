@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>introduce TEAM!</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    <style media="screen">
+    li {
+ border:1px solid;
+ padding:1px;
+}
+
+.main {
+ list-style:none;
+ position:relative;
+}
+
+.sub, .sub2 {
+ list-style:none;
+ position:absolute;
+ display:none;
+ width:75px;
+}
+
+.sub2 {
+ float:left;
+ left:75px;
+ top:0px;
+}
+
+.main li:hover .sub,
+.sub li:hover .sub2{
+ display:block;
+}
+
+    </style>
+  </head>
+  <body>
+    <ul class="main">
+    <li>all
+        <ul class="sub">
+            <li>books
+                <ul class="sub2">
+                    <li>fiction</li>
+                    <li>biography</li>
+                </ul>
+            </li>
+            <li>mobile
+                <ul class="sub2">
+                    <li>android</li>
+                    <li>cmda</li>
+                    <li>battery</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>​
+<ul class="main" style="margin-top:-50px;">
+<li>all
+    <ul class="sub">
+        <li>books
+            <ul class="sub2">
+                <li>fiction</li>
+                <li>biography</li>
+            </ul>
+        </li>
+        <li>mobile
+            <ul class="sub2">
+                <li>android</li>
+                <li>cmda</li>
+                <li>battery</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</ul>​
+  </body>
+</html>
